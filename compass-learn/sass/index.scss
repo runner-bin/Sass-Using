@@ -1,0 +1,27 @@
+@import "compass/reset";
+
+.banner {
+  height:500px;
+  background:gray;
+  position: relative;
+  .banner-back{
+    position: absolute;
+    margin: 20px 20px;
+    background: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: block;
+    .banner-left{
+      height: auto;
+    }
+    .banner-right{
+      width: auto;
+    }
+  }
+}
+
+.detail {
+  height: 1300px
+}
