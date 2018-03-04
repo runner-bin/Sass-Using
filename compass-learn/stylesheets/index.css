@@ -65,14 +65,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 3, ../sass/index.scss */
 .banner {
-  height: 500px;
+  height: 700px;
+  width: 100%;
+  min-width: 1200px;
   background: gray;
   position: relative;
 }
-/* line 7, ../sass/index.scss */
+/* line 9, ../sass/index.scss */
 .banner .banner-back {
   position: absolute;
-  margin: 20px 20px;
+  margin: 50px 50px;
   background: white;
   left: 0;
   right: 0;
@@ -80,16 +82,97 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 0;
   display: block;
 }
-/* line 16, ../sass/index.scss */
+/* line 18, ../sass/index.scss */
 .banner .banner-back .banner-left {
-  height: auto;
+  height: 100%;
+  width: 750px;
+  float: left;
 }
-/* line 19, ../sass/index.scss */
+/* line 22, ../sass/index.scss */
+.banner .banner-back .banner-left img {
+  padding: 95px 10px;
+  width: 700px;
+}
+/* line 27, ../sass/index.scss */
 .banner .banner-back .banner-right {
-  width: auto;
+  height: 100%;
+  width: 504px;
+  float: left;
+}
+/* line 31, ../sass/index.scss */
+.banner .banner-back .banner-right .banner-right-top {
+  margin-top: 150px;
+}
+/* line 34, ../sass/index.scss */
+.banner .banner-back .banner-right h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+/* line 38, ../sass/index.scss */
+.banner .banner-back .banner-right .banner-right-bottom {
+  margin-top: 150px;
+}
+/* line 40, ../sass/index.scss */
+.banner .banner-back .banner-right .banner-right-bottom a {
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 50px;
+  padding: 10px 60px;
+}
+/* line 47, ../sass/index.scss */
+.banner .banner-back .banner-right .banner-right-bottom #btn-try {
+  background: blue;
+  color: white;
+}
+/* line 51, ../sass/index.scss */
+.banner .banner-back .banner-right .banner-right-bottom #btn-buy {
+  margin-left: 20px;
+  border: 0.5px solid black;
+  color: black;
+}
+/* line 59, ../sass/index.scss */
+.banner .banner-back::after {
+  content: '';
+  clear: both;
+  display: block;
 }
 
-/* line 25, ../sass/index.scss */
+/* line 66, ../sass/index.scss */
 .detail {
-  height: 1300px;
+  height: auto;
+  margin: 100px 80px 0px 80px;
+}
+/* line 69, ../sass/index.scss */
+.detail .detail-item {
+  padding: 100px 0;
+}
+/* line 71, ../sass/index.scss */
+.detail .detail-item .block-text {
+  float: left;
+  width: 630px;
+}
+/* line 74, ../sass/index.scss */
+.detail .detail-item .block-text h1 {
+  font-size: 45px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  width: 550px;
+}
+/* line 80, ../sass/index.scss */
+.detail .detail-item .block-text p {
+  font-size: 30px;
+  margin-left: 20px;
+  width: 550px;
+}
+/* line 86, ../sass/index.scss */
+.detail .detail-item img {
+  float: left;
+  width: 630px;
+}
+/* line 91, ../sass/index.scss */
+.detail .detail-item::after {
+  content: '';
+  clear: both;
+  display: block;
 }
